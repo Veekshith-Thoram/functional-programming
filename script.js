@@ -13,3 +13,26 @@ Obj.printName(5);
 //functions assigned in arrays
 const arr = ["1", "2", nameLength => console.log(`Omg my name is ${nameLength} Long!`)];
 arr[2](6);
+
+//how to do functional programming
+
+//Immutability
+const tanay = {
+    mother: "Kalyani",
+    age: 30
+}
+
+const tanvi = {...tanay, age: tanay.age - 4}
+console.log(tanay)
+console.log(tanvi)
+
+const arrColor = ["red", "green", "blue", "violet", "saffron"];
+const arrColor2 = [...arrColor, "Black", "orange"];
+console.log(arrColor);
+console.log(arrColor2);
+
+//pure functions
+const birthday = (person) => ({ ...person, age: person.age + 1});
+
+const tanayAftBday = birthday(tanay);
+console.log(tanayAftBday)
