@@ -36,3 +36,11 @@ const birthday = (person) => ({ ...person, age: person.age + 1});
 
 const tanayAftBday = birthday(tanay);
 console.log(tanayAftBday)
+
+//higher order function
+//can take functions as arguments
+
+const lessThanTen = number => number < 10;
+const array1 = [15, 12, 10, 12, 6, 5, 2, 1];
+const array2 = array1.filter(number => lessThanTen(number));
+console.log(array2)
