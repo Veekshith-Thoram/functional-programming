@@ -21,7 +21,7 @@ const tanay = {
     mother: "Kalyani",
     age: 30
 }
-
+console.log('Hey sadhvee')
 const tanvi = {...tanay, age: tanay.age - 4}
 console.log(tanay)
 console.log(tanvi)
@@ -45,3 +45,4 @@ const array1 = [15, 12, 10, 12, 6, 5, 2, 1];
 const array2 = array1.filter(number => lessThanTen(number));
 console.log(array2)
 
+console.log('Hey sadhvee')
